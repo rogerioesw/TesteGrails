@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="2" failures="1" hostname="Rogerio-PC" id="0" name="AlunoControllerSpec" package="faculdade" tests="7" time="10.901" timestamp="2014-07-08T00:30:30">
+      <properties />
+
+      <testcase classname="faculdade.AlunoControllerSpec" name="Test the index action returns the correct model" time="6.951" />
+
+      <testcase classname="faculdade.AlunoControllerSpec" name="Test the create action returns the correct model" time="0.401" />
+
+      <testcase classname="faculdade.AlunoControllerSpec" name="Test the save action correctly persists an instance" time="1.099">
+          <error message="Cannot redirect for object [faculdade.Aluno : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [faculdade.Aluno : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.codehaus.groovy.grails.plugins.web.api.ControllersApi.redirect(ControllersApi.java:274)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+	at groovy.lang.GroovyObjectSupport.invokeMethod(GroovyObjectSupport.java:44)
+	at faculdade.AlunoController.tt__save_closure9_closure14(AlunoController.groovy:43)
+	at faculdade.AlunoController.tt__save_closure9_closure14(AlunoController.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+	at groovy.lang.Closure.call(Closure.java:411)
+	at groovy.lang.Closure.call(Closure.java:405)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.getResponseForFormat(MimeTypesApiSupport.groovy:142)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.withFormatInternal(MimeTypesApiSupport.groovy:57)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.withFormat(MimeTypesApiSupport.groovy:40)
+	at org.codehaus.groovy.grails.plugins.web.api.RequestMimeTypesApi.withFormat(RequestMimeTypesApi.groovy:95)
+	at faculdade.AlunoController.$tt__save(AlunoController.groovy:40)
+	at faculdade.AlunoController.save_closure4(AlunoController.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+	at groovy.lang.Closure.call(Closure.java:411)
+	at groovy.lang.Closure.call(Closure.java:427)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$1.doInTransaction(GrailsTransactionTemplate.groovy:62)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:131)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:59)
+	at faculdade.AlunoControllerSpec.Test the save action correctly persists an instance(AlunoControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="faculdade.AlunoControllerSpec" name="Test that the show action returns the correct model" time="0.203" />
+
+      <testcase classname="faculdade.AlunoControllerSpec" name="Test that the edit action returns the correct model" time="0.213" />
+
+      <testcase classname="faculdade.AlunoControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.861">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at faculdade.AlunoControllerSpec.Test the update action performs an update on a valid domain instance(AlunoControllerSpec.groovy:120)
+</error>
+
+      </testcase>
+
+      <testcase classname="faculdade.AlunoControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.243">
+          <failure message="Condition not satisfied:&#xa;&#xa;Aluno.count() == 1&#xa;      |       |&#xa;      0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Aluno.count() == 1
+      |       |
+      0       false
+
+	at faculdade.AlunoControllerSpec.Test that the delete action deletes an instance if it exists(AlunoControllerSpec.groovy:139)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="Rogerio-PC" id="1" name="FaculdadeControllerSpec" package="faculdade" tests="7" time="3.663" timestamp="2014-07-08T00:30:41">
+      <properties />
+
+      <testcase classname="faculdade.FaculdadeControllerSpec" name="Test the index action returns the correct model" time="1.492" />
+
+      <testcase classname="faculdade.FaculdadeControllerSpec" name="Test the create action returns the correct model" time="0.244" />
+
+      <testcase classname="faculdade.FaculdadeControllerSpec" name="Test the save action correctly persists an instance" time="0.286">
+          <error message="Cannot redirect for object [faculdade.Faculdade : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [faculdade.Faculdade : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.codehaus.groovy.grails.plugins.web.api.ControllersApi.redirect(ControllersApi.java:274)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+	at groovy.lang.GroovyObjectSupport.invokeMethod(GroovyObjectSupport.java:44)
+	at faculdade.FaculdadeController.tt__save_closure9_closure14(FaculdadeController.groovy:43)
+	at faculdade.FaculdadeController.tt__save_closure9_closure14(FaculdadeController.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+	at groovy.lang.Closure.call(Closure.java:411)
+	at groovy.lang.Closure.call(Closure.java:405)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.getResponseForFormat(MimeTypesApiSupport.groovy:142)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.withFormatInternal(MimeTypesApiSupport.groovy:57)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.withFormat(MimeTypesApiSupport.groovy:40)
+	at org.codehaus.groovy.grails.plugins.web.api.RequestMimeTypesApi.withFormat(RequestMimeTypesApi.groovy:95)
+	at faculdade.FaculdadeController.$tt__save(FaculdadeController.groovy:40)
+	at faculdade.FaculdadeController.save_closure4(FaculdadeController.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+	at groovy.lang.Closure.call(Closure.java:411)
+	at groovy.lang.Closure.call(Closure.java:427)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$1.doInTransaction(GrailsTransactionTemplate.groovy:62)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:131)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:59)
+	at faculdade.FaculdadeControllerSpec.Test the save action correctly persists an instance(FaculdadeControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="faculdade.FaculdadeControllerSpec" name="Test that the show action returns the correct model" time="0.154" />
+
+      <testcase classname="faculdade.FaculdadeControllerSpec" name="Test that the edit action returns the correct model" time="0.164" />
+
+      <testcase classname="faculdade.FaculdadeControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.385">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at faculdade.FaculdadeControllerSpec.Test the update action performs an update on a valid domain instance(FaculdadeControllerSpec.groovy:120)
+</error>
+
+      </testcase>
+
+      <testcase classname="faculdade.FaculdadeControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.25">
+          <failure message="Condition not satisfied:&#xa;&#xa;Faculdade.count() == 1&#xa;          |       |&#xa;          0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Faculdade.count() == 1
+          |       |
+          0       false
+
+	at faculdade.FaculdadeControllerSpec.Test that the delete action deletes an instance if it exists(FaculdadeControllerSpec.groovy:139)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="1" hostname="Rogerio-PC" id="2" name="ProfessorControllerSpec" package="faculdade" tests="7" time="3.576" timestamp="2014-07-08T00:30:45">
+      <properties />
+
+      <testcase classname="faculdade.ProfessorControllerSpec" name="Test the index action returns the correct model" time="1.722" />
+
+      <testcase classname="faculdade.ProfessorControllerSpec" name="Test the create action returns the correct model" time="0.228" />
+
+      <testcase classname="faculdade.ProfessorControllerSpec" name="Test the save action correctly persists an instance" time="0.548">
+          <error message="Cannot redirect for object [faculdade.Professor : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [faculdade.Professor : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.codehaus.groovy.grails.plugins.web.api.ControllersApi.redirect(ControllersApi.java:274)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+	at groovy.lang.GroovyObjectSupport.invokeMethod(GroovyObjectSupport.java:44)
+	at faculdade.ProfessorController.tt__save_closure10_closure15(ProfessorController.groovy:46)
+	at faculdade.ProfessorController.tt__save_closure10_closure15(ProfessorController.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+	at groovy.lang.Closure.call(Closure.java:411)
+	at groovy.lang.Closure.call(Closure.java:405)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.getResponseForFormat(MimeTypesApiSupport.groovy:142)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.withFormatInternal(MimeTypesApiSupport.groovy:57)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.withFormat(MimeTypesApiSupport.groovy:40)
+	at org.codehaus.groovy.grails.plugins.web.api.RequestMimeTypesApi.withFormat(RequestMimeTypesApi.groovy:95)
+	at faculdade.ProfessorController.$tt__save(ProfessorController.groovy:43)
+	at faculdade.ProfessorController.save_closure4(ProfessorController.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+	at groovy.lang.Closure.call(Closure.java:411)
+	at groovy.lang.Closure.call(Closure.java:427)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$1.doInTransaction(GrailsTransactionTemplate.groovy:62)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:131)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:59)
+	at faculdade.ProfessorControllerSpec.Test the save action correctly persists an instance(ProfessorControllerSpec.groovy:53)
+</error>
+
+      </testcase>
+
+      <testcase classname="faculdade.ProfessorControllerSpec" name="Test that the show action returns the correct model" time="0.187" />
+
+      <testcase classname="faculdade.ProfessorControllerSpec" name="Test that the edit action returns the correct model" time="0.218" />
+
+      <testcase classname="faculdade.ProfessorControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.41">
+          <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at faculdade.ProfessorControllerSpec.Test the update action performs an update on a valid domain instance(ProfessorControllerSpec.groovy:120)
+</error>
+
+      </testcase>
+
+      <testcase classname="faculdade.ProfessorControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.243">
+          <failure message="Condition not satisfied:&#xa;&#xa;Professor.count() == 1&#xa;          |       |&#xa;          0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+Professor.count() == 1
+          |       |
+          0       false
+
+	at faculdade.ProfessorControllerSpec.Test that the delete action deletes an instance if it exists(ProfessorControllerSpec.groovy:139)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

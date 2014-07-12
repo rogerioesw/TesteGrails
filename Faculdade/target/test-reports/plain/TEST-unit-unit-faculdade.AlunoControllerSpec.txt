@@ -1,0 +1,73 @@
+Testsuite: faculdade.AlunoControllerSpec
+Tests run: 7, Failures: 1, Errors: 2, Time elapsed: 10,901 sec
+------------- Standard Output ---------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+
+Testcase: Test the index action returns the correct model took 6,951 sec
+Testcase: Test the create action returns the correct model took 0,401 sec
+Testcase: Test the save action correctly persists an instance took 1,076 sec
+	Caused an ERROR
+Cannot redirect for object [faculdade.Aluno : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [faculdade.Aluno : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.codehaus.groovy.grails.plugins.web.api.ControllersApi.redirect(ControllersApi.java:274)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+	at groovy.lang.GroovyObjectSupport.invokeMethod(GroovyObjectSupport.java:44)
+	at faculdade.AlunoController.tt__save_closure9_closure14(AlunoController.groovy:43)
+	at faculdade.AlunoController.tt__save_closure9_closure14(AlunoController.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+	at groovy.lang.Closure.call(Closure.java:411)
+	at groovy.lang.Closure.call(Closure.java:405)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.getResponseForFormat(MimeTypesApiSupport.groovy:142)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.withFormatInternal(MimeTypesApiSupport.groovy:57)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.withFormat(MimeTypesApiSupport.groovy:40)
+	at org.codehaus.groovy.grails.plugins.web.api.RequestMimeTypesApi.withFormat(RequestMimeTypesApi.groovy:95)
+	at faculdade.AlunoController.$tt__save(AlunoController.groovy:40)
+	at faculdade.AlunoController.save_closure4(AlunoController.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1254)
+	at groovy.lang.Closure.call(Closure.java:411)
+	at groovy.lang.Closure.call(Closure.java:427)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$1.doInTransaction(GrailsTransactionTemplate.groovy:62)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:131)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:59)
+	at faculdade.AlunoControllerSpec.Test the save action correctly persists an instance(AlunoControllerSpec.groovy:53)
+
+Testcase: Test that the show action returns the correct model took 0,203 sec
+Testcase: Test that the edit action returns the correct model took 0,213 sec
+Testcase: Test the update action performs an update on a valid domain instance took 0,841 sec
+	Caused an ERROR
+Cannot get property 'id' on null object
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at faculdade.AlunoControllerSpec.Test the update action performs an update on a valid domain instance(AlunoControllerSpec.groovy:120)
+
+Testcase: Test that the delete action deletes an instance if it exists took 0,218 sec
+	FAILED
+Condition not satisfied:
+
+Aluno.count() == 1
+      |       |
+      0       false
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+Aluno.count() == 1
+      |       |
+      0       false
+
+	at faculdade.AlunoControllerSpec.Test that the delete action deletes an instance if it exists(AlunoControllerSpec.groovy:139)
+
